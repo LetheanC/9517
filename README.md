@@ -74,7 +74,7 @@ The following table compares all models under different data balancing strategie
 
 ## Explainable AI
 
+![image](https://github.com/Jiaqi-Shan/9517/blob/main/explainable_ai.png)
 Explainability is performed via:
 - **Grad-CAM**: Highlights class-discriminative regions in CNNs.
 - **Attention Rollout**: Visualizes global token influence in Transformer-based architectures.
-![image](https://github.com/Jiaqi-Shan/9517/blob/main/explainable_ai.png)
