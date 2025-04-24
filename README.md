@@ -15,13 +15,18 @@ Skyview contains 12,000 aerial images, equally distributed across 15 land cover 
 - scikit-learn  
 - timm  
 - OpenCV  
-- matplotlib, seaborn  
+- matplotlib, seaborn
+
+The requirements of explainable_ai could fine in explainable_ai/requirements.txt
 
 ## Project Structure
 
-- `ml_classification.ipynb`: Experiments with traditional ML models using handcrafted features (LBP + SIFT + BoVW + PCA).
-- `dl_classification.ipynb`: Experiments with pretrained deep learning models and long-tailed class handling.
+- `ml.ipynb`: Experiments with traditional ML models using handcrafted features (LBP + SIFT + BoVW + PCA).
+- `dl.ipynb`: Experiments with pretrained deep learning models and long-tailed class handling.
 - `explainability/`: Project folder for visualizing model decisions with Grad-CAM and attention rollout.
+- `ml.ipynb`: Experiments with traditional ML models using handcrafted features (LBP + SIFT + BoVW + PCA).
+- `dl.ipynb`: Experiments with pretrained deep learning models and long-tailed class handling.
+- `explainable_ai/`: Project folder for visualizing model decisions with Grad-CAM and attention rollout.
 
 ## Training Configurations
 
@@ -70,3 +75,6 @@ The following table compares all models under different data balancing strategie
 | SE-ResNeXt50-32x4d    | 0.9487           | 0.9471          | 0.9675          | 0.9900     |
 | PVTv2                 | 0.9358           | 0.9437          | 0.9587          | 0.9846     |
 | Explainable ViT model | -                | -               | -               | 0.9683     |
+a. 80/20 train-test split
+b. 5-fold cross-validation
+
