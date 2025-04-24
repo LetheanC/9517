@@ -9,15 +9,15 @@ Skyview contains 12,000 aerial images, equally distributed across 15 land cover 
 
 ## Requirements
 
-- Python ≥ 3.8  
-- PyTorch ≥ 1.12  
+- Python 
+- PyTorch
 - Albumentations  
 - scikit-learn  
 - timm  
 - OpenCV  
 - matplotlib, seaborn
 
-The requirements of explainable_ai could fine in explainable_ai/requirements.txt
+The requirements of explainable_ai could fine in Explainable_ViT_Model/requirements.txt
 
 ## Project Structure
 
@@ -27,7 +27,7 @@ The requirements of explainable_ai could fine in explainable_ai/requirements.txt
 - `minority_data_enhancement.py`: Dataloader with targeted data augmentation for minority classes in the long-tailed dataset.
 - `ml.ipynb`: Experiments with traditional machine learning models.
 - `dl.ipynb`: Experiments with pretrained deep learning models.
-- `explainable_ai/`: Project folder for visualizing model decisions with Grad-CAM and attention rollout.
+- `Explainable_ViT_Model/`: A hybrid vision transformer model for visualizing model decisions with Grad-CAM and attention rollout.
 
 ## Training Configurations
 
@@ -77,3 +77,4 @@ The following table compares all models under different data balancing strategie
 Explainability is performed via:
 - **Grad-CAM**: Highlights class-discriminative regions in CNNs.
 - **Attention Rollout**: Visualizes global token influence in Transformer-based architectures.
+- [image](https://github.com/Jiaqi-Shan/9517/blob/main/explainable_ai.png)
