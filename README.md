@@ -43,23 +43,11 @@ Class imbalance is addressed using class-weighted training (SVM, RF, XGBoost) an
 - Image size: 256×256  
 - Scheduler: CosineAnnealingLR (T_max=0.8*epochs)
 
-## Results Summary
-
-- Deep learning models achieved up to **99%** accuracy on the balanced dataset.
-- Machine learning models peaked at around **65%** accuracy.
-- Minority-class augmentation improved deep learning performance by **1.94 percentage points** on average.
-- Traditional models struggled to generalize on imbalanced data, while deep models showed stronger robustness.
-
-## Explainable AI
-
-Explainability is performed via:
-- **Grad-CAM**: Highlights class-discriminative regions in CNNs.
-- **Attention Rollout**: Visualizes global token influence in Transformer-based architectures.
-
-
 ## Full Performance Table
 
 The following table compares all models under different data balancing strategies:
+a.80/20 train-test split
+b.5-fold cross-validation
 
 | Model                 | Long-Tail Only   | +Oversampling   | +Augmentation   | Original   |
 |:----------------------|:-----------------|:----------------|:----------------|:-----------|
@@ -75,6 +63,16 @@ The following table compares all models under different data balancing strategie
 | SE-ResNeXt50-32x4d    | 0.9487           | 0.9471          | 0.9675          | 0.9900     |
 | PVTv2                 | 0.9358           | 0.9437          | 0.9587          | 0.9846     |
 | Explainable ViT model | -                | -               | -               | 0.9683     |
-a. 80/20 train-test split
-b. 5-fold cross-validation
 
+## Results Summary
+
+- Deep learning models achieved up to **99%** accuracy on the balanced dataset.
+- Machine learning models peaked at around **65%** accuracy.
+- Minority-class augmentation improved deep learning performance by **1.94 percentage points** on average.
+- Traditional models struggled to generalize on imbalanced data, while deep models showed stronger robustness.
+
+## Explainable AI
+
+Explainability is performed via:
+- **Grad-CAM**: Highlights class-discriminative regions in CNNs.
+- **Attention Rollout**: Visualizes global token influence in Transformer-based architectures.
