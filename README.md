@@ -25,8 +25,8 @@ The requirements of explainable_ai could fine in explainable_ai/requirements.txt
 - `long-tailed_distribution.py`: Dataloader for the constructed long-tailed dataset.
 - `oversampling.py`: Dataloader with random oversampling applied to the long-tailed dataset.
 - `minority_data_enhancement.py`: Dataloader with targeted data augmentation for minority classes in the long-tailed dataset.
-- `ml.ipynb`: Experiments with traditional ML models using handcrafted features (LBP + SIFT + BoVW + PCA).
-- `dl.ipynb`: Experiments with pretrained deep learning models and long-tailed class handling.
+- `ml.ipynb`: Experiments with traditional machine learning models.
+- `dl.ipynb`: Experiments with pretrained deep learning models.
 - `explainable_ai/`: Project folder for visualizing model decisions with Grad-CAM and attention rollout.
 
 ## Training Configurations
