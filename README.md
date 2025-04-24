@@ -5,7 +5,7 @@ In order to demonstrate explainable AI techniques, a separate project folder is 
 
 ## Dataset
 
-Skyview contains 12,000 aerial images, equally distributed across 15 land cover categories such as agriculture, forest, beach, residential, and desert. Each image has a resolution of 256×256 pixels. The dataset is constructed from publicly available benchmarks, AID and NWPU-RESISC45, and serves as a balanced and diverse benchmark for classification tasks.
+[Skyview Aerial Landscape Images](https://www.kaggle.com/datasets/ankit1743/skyview-an-aerial-landscape-dataset) contains 12,000 aerial images, equally distributed across 15 land cover categories such as agriculture, forest, beach, residential, and desert. Each image has a resolution of 256×256 pixels. The dataset is constructed from publicly available benchmarks, AID and NWPU-RESISC45, and serves as a balanced and diverse benchmark for classification tasks.
 
 ## Requirements
 
@@ -75,6 +75,7 @@ The following table compares all models under different data balancing strategie
 ## Explainable AI
 
 ![image](https://github.com/Jiaqi-Shan/9517/blob/main/explainable_ai.png)
+
 Explainability is performed via:
 - **Grad-CAM**: Highlights class-discriminative regions in CNNs.
 - **Attention Rollout**: Visualizes global token influence in Transformer-based architectures.
