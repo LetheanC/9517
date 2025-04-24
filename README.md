@@ -21,9 +21,10 @@ The requirements of explainable_ai could fine in explainable_ai/requirements.txt
 
 ## Project Structure
 
-- `ml.ipynb`: Experiments with traditional ML models using handcrafted features (LBP + SIFT + BoVW + PCA).
-- `dl.ipynb`: Experiments with pretrained deep learning models and long-tailed class handling.
-- `explainability/`: Project folder for visualizing model decisions with Grad-CAM and attention rollout.
+- `original_dataloader.py`: Dataloader for the original balanced dataset.
+- `long-tailed_distribution.py`: Dataloader for the constructed long-tailed dataset.
+- `oversampling.py`: Dataloader with random oversampling applied to the long-tailed dataset.
+- `minority_data_enhancement.py`: Dataloader with targeted data augmentation for minority classes in the long-tailed dataset.
 - `ml.ipynb`: Experiments with traditional ML models using handcrafted features (LBP + SIFT + BoVW + PCA).
 - `dl.ipynb`: Experiments with pretrained deep learning models and long-tailed class handling.
 - `explainable_ai/`: Project folder for visualizing model decisions with Grad-CAM and attention rollout.
@@ -46,8 +47,8 @@ Class imbalance is addressed using class-weighted training (SVM, RF, XGBoost) an
 ## Full Performance Table
 
 The following table compares all models under different data balancing strategies:
-a.80/20 train-test split
-b.5-fold cross-validation
+- a.80/20 train-test split
+- b.5-fold cross-validation
 
 | Model                 | Long-Tail Only   | +Oversampling   | +Augmentation   | Original   |
 |:----------------------|:-----------------|:----------------|:----------------|:-----------|
